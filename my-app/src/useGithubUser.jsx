@@ -12,6 +12,6 @@ export default function useGithubUser(username) {
   return {
     data,
     error,
-    mutate: () => mutate(`https://api.github.com/users/${username}`),
+    mutate: () => mutate(null),
   }; //qui si inserusce la funzione mutate per aggiornare manualmente i dati.
 }
